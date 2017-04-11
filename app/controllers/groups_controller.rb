@@ -32,7 +32,7 @@ class GroupsController < ApplicationController
 
     if @group.update(group_params)
       redirect_to groups_path, ntice: "Update Success"
-    eles
+    else
       render :edit
     end
   end
