@@ -14,9 +14,9 @@ ActiveRecord::Schema.define(version: 20170411032319) do
 
   create_table "group_relationships", force: :cascade do |t|
     t.integer  "group_id"
-    t.string   "user_idteger"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "groups", force: :cascade do |t|
